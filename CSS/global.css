@@ -12,6 +12,10 @@ html,
       margin: 0;
       padding: 0;
     }
+    img{
+      max-width: 200px;
+      display: block;
+    }
 
     .swiper {
       width: 100%;
