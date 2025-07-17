@@ -44,7 +44,9 @@ html,
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-image: linear-gradient(rgb(168, 26, 19),rgba(0,0,0,0.1));
+        background-image: 
+          linear-gradient(to right,rgba(213,0,50,1.00),rgba(254,80,1.00)),
+          linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
         top: 0;
         position: sticky;
         padding: 16px 32px;
@@ -63,4 +65,21 @@ html,
     }
     .nav-links li a:hover{
         color: dimgray;
+    }
+    .comp {
+      display: flex;
+      height: 100vh; /* Full viewport height */
+      width: 100vw;  /* Full viewport width */
+    }
+    
+    .esquerdo, .direito {
+      width: 50%;
+      height: 100%;
+      overflow-y: auto; /* scroll if content overflows */
+      padding: 1rem; /* optional spacing */
+      box-sizing: border-box;
+    }
+    
+    .accordion {
+      height: 100%;
     }

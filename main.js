@@ -1,14 +1,13 @@
 const criarTarefa = (evento) =>{
     evento.preventDefault();
-    const quantidade = 3;
+    const quantidade = 20;
     let repete = quantidade;
     const lista = document.querySelector('[data-liastaSeguradoras]');
     while(repete > 0){
         const valor = repete;
-        console.log(valor);
         const slideWrap = document.createElement('div');
         slideWrap.classList.add('swiper-slide')
-        const conteudo = `<img src="./img/${valor}.png" alt="">`;
+        const conteudo = `<img src="./img/${valor}.png" alt="${valor}">`;
         slideWrap.innerHTML = conteudo;
         lista.appendChild(slideWrap);
         repete -= 1;
